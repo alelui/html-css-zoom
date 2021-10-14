@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
 .clearfix:after{
     content: '';
     display: table;
@@ -20,12 +26,75 @@
     display: flex;
 }
 
-
+i{
+    color: white;
+}
 /* *** HEADER *** */
 
 /* *** MAIN *** */
 
+
+
 /* *** FOOTER *** */
+
+footer{
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+}
 
 /* *** DEBUG *** */
 
+.debug main{
+    height: calc( 100vh - 80px);
+}
+
+.debug footer nav{
+    height: 100%;
+}
+
+.debug footer nav{
+    align-items: center;
+    justify-content: center;
+}
+
+.debug footer nav .long{
+    width: 20%;
+}
+
+.debug footer nav .btn,
+.debug footer nav .apertura{
+    margin: 0 4px;
+    justify-content: center;
+}
+
+
+.debug footer nav .item{
+    flex-direction: column;
+    align-items: center;
+}
+
+.debug footer nav .item i{
+    font-size: 25px;
+}
+
+.debug footer nav .apertura{
+    align-items: center;
+}
+
+
+
+
+.debug footer .nav-left{
+    width: 18%;
+    background-color: brown;
+}
+
+.debug footer .nav-midle{
+    width: 65%;
+    background-color: green;
+}
+.debug footer .nav-right{
+    width: 10%;
+    background-color: greenyellow;
+}
