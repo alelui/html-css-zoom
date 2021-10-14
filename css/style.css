@@ -38,15 +38,15 @@ i{
 /* *** FOOTER *** */
 
 footer{
-    height: 100px;
-    background-color: black;
+    height: 50px;
+    background-color: #2f2e2e;
     justify-content: space-between;
 }
 
 /* *** DEBUG *** */
 
 .debug main{
-    height: calc( 100vh - 80px);
+    height: calc( 100vh - 50px);
 }
 
 .debug footer nav{
@@ -64,7 +64,7 @@ footer{
 
 .debug footer nav .btn,
 .debug footer nav .apertura{
-    margin: 0 4px;
+    margin: 0 10px;
     justify-content: center;
 }
 
@@ -82,19 +82,29 @@ footer{
     align-items: center;
 }
 
-
+.lime{
+    color: lime;
+}
 
 
 .debug footer .nav-left{
-    width: 18%;
-    background-color: brown;
+    width: 18%;  
 }
 
 .debug footer .nav-midle{
     width: 65%;
-    background-color: green;
 }
 .debug footer .nav-right{
     width: 10%;
-    background-color: greenyellow;
 }
+
+
+.debug footer .nav-right .layover{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    color: red;
+    justify-content: center;
+    align-items: center;
+}
+
