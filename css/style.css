@@ -26,30 +26,92 @@ body{
     display: flex;
 }
 
-i{
-    color: white;
+.border{
+    border: 4px solid yellow;
 }
 
 .lime{
     color: lime;
 }
-
 .blue{
     color: rgb(0, 208, 255);
 }
-
 .gray{
     color: gray;
 }
 
-.border{
-    border: 4px solid yellow;
-}
-/* *** HEADER *** */
+
 
 /* *** MAIN *** */
 
+main{
+    height: calc( 100vh - 50px);
+    background-color: black;
+}
 
+main .colum{
+    width: 5%;
+    height: 100%;
+}
+
+main .central{
+    width: 95%;
+    height: 100%;
+
+    padding: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+main .central .box{
+    width: calc( 100% / 5 - 10px );
+    margin: 5px;
+    background-color: chocolate;
+    align-items: end;
+    background-image: url('../img/116875.jpg');
+    background-size: cover;
+}
+#gengar{
+    background-image: url('../img/119152.jpg');
+}
+#lava{
+    background-image: url('../img/265693.png');
+}
+#lava{
+    background-image: url('../img/265693.png');
+}
+#key{
+    background-image: url('../img/332764.jpg');
+}
+#kiojin{
+    background-image: url('../img/403477.jpg');
+}
+#dbz{
+    background-image: url('../img/564835.jpg');
+}
+#kirito{
+    background-image: url('../img/632048.jpg');
+}
+#shigatsu{
+    background-image: url('../img/666808.jpg');
+}
+
+main .central .box .name{
+    display: inline-block;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main .colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .colum i{
+    font-size: 50px;
+}
 
 
 /* *** FOOTER *** */
@@ -123,73 +185,5 @@ footer .nav-right .layover{
 /* *** DEBUG *** */
 
 
-main{
-    height: calc( 100vh - 50px);
-    background-color: black;
-}
 
-.debug main .colum{
-    width: 5%;
-    height: 100%;
-
-}
-
-.debug main .central{
-    width: 95%;
-    height: 100%;
-
-    padding: 20px 0 40px;
-    flex-wrap: wrap;
-}
-
-.debug main .central .box{
-    width: calc( 100% / 5 - 10px );
-    margin: 5px;
-    background-color: chocolate;
-    align-items: end;
-    background-image: url('../img/116875.jpg');
-    background-size: cover;
-}
-#gengar{
-    background-image: url('../img/119152.jpg');
-}
-#lava{
-    background-image: url('../img/265693.png');
-}
-#lava{
-    background-image: url('../img/265693.png');
-}
-#key{
-    background-image: url('../img/332764.jpg');
-}
-#kiojin{
-    background-image: url('../img/403477.jpg');
-}
-#dbz{
-    background-image: url('../img/564835.jpg');
-}
-#kirito{
-    background-image: url('../img/632048.jpg');
-}
-#shigatsu{
-    background-image: url('../img/666808.jpg');
-}
-
-.debug main .central .box .name{
-    display: inline-block;
-    padding: 2px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.debug main .colum{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.debug main .colum i{
-    font-size: 50px;
-}
 
