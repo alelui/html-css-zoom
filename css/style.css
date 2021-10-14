@@ -29,9 +29,26 @@ body{
 i{
     color: white;
 }
+
+.lime{
+    color: lime;
+}
+
+.blue{
+    color: rgb(0, 208, 255);
+}
+
+.gray{
+    color: gray;
+}
+
+.border{
+    border: 4px solid yellow;
+}
 /* *** HEADER *** */
 
 /* *** MAIN *** */
+
 
 
 
@@ -43,48 +60,37 @@ footer{
     justify-content: space-between;
 }
 
-/* *** DEBUG *** */
-
-.debug main{
-    height: calc( 100vh - 50px);
-    background-color: black;
-}
-
-.debug footer nav{
+footer nav{
     height: 100%;
 }
 
-.debug footer nav{
+footer nav{
     align-items: center;
     justify-content: center;
 }
 
-.debug footer nav .long{
+footer nav .long{
     width: 20%;
 }
 
-.debug footer nav .btn,
-.debug footer nav .apertura{
+footer nav .btn,
+footer nav .apertura{
     margin: 0 10px;
     justify-content: center;
 }
 
 
-.debug footer nav .item{
+footer nav .item{
     flex-direction: column;
     align-items: center;
 }
 
-.debug footer nav .item i{
+footer nav .item i{
     font-size: 25px;
 }
 
-.debug footer nav .apertura{
+footer nav .apertura{
     align-items: center;
-}
-
-.lime{
-    color: lime;
 }
 
 #par-num{
@@ -93,24 +99,97 @@ footer{
     right: 40px;
 }
 
-.debug footer .nav-left{
+footer .nav-left{
     width: 16%;  
 }
 
-.debug footer .nav-midle{
+footer .nav-midle{
     width: 60%;
 }
-.debug footer .nav-right{
+footer .nav-right{
     width: 10%;
 }
 
 
-.debug footer .nav-right .layover{
+footer .nav-right .layover{
     width: 100%;
     height: 100%;
     background-color: rgba(92, 91, 91, 0.7);
     color: red;
     justify-content: center;
     align-items: center;
+}
+
+/* *** DEBUG *** */
+
+
+main{
+    height: calc( 100vh - 50px);
+    background-color: black;
+}
+
+.debug main .colum{
+    width: 5%;
+    height: 100%;
+
+}
+
+.debug main .central{
+    width: 95%;
+    height: 100%;
+
+    padding: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+.debug main .central .box{
+    width: calc( 100% / 5 - 10px );
+    margin: 5px;
+    background-color: chocolate;
+    align-items: end;
+    background-image: url('../img/116875.jpg');
+    background-size: cover;
+}
+#gengar{
+    background-image: url('../img/119152.jpg');
+}
+#lava{
+    background-image: url('../img/265693.png');
+}
+#lava{
+    background-image: url('../img/265693.png');
+}
+#key{
+    background-image: url('../img/332764.jpg');
+}
+#kiojin{
+    background-image: url('../img/403477.jpg');
+}
+#dbz{
+    background-image: url('../img/564835.jpg');
+}
+#kirito{
+    background-image: url('../img/632048.jpg');
+}
+#shigatsu{
+    background-image: url('../img/666808.jpg');
+}
+
+.debug main .central .box .name{
+    display: inline-block;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.debug main .colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.debug main .colum i{
+    font-size: 50px;
 }
 
